@@ -1,0 +1,5 @@
+spinwheel-key.json
+*.json
+.env
+__pycache__/
+.env.local
