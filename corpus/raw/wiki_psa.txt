@@ -1,0 +1,304 @@
+SOURCE: https://en.wikipedia.org/wiki/Professional_Sports_Authenticator
+LABEL: Wikipedia: Professional Sports Authenticator
+CHARS: 9904
+---
+Professional Sports Authenticator - Wikipedia
+Jump to content
+From Wikipedia, the free encyclopedia
+This article
+needs additional citations for
+verification
+.
+Please help
+improve this article
+by
+adding citations to reliable sources
+. Unsourced material may be challenged and removed.
+Find sources:
+"Professional Sports Authenticator"
+–
+news
+·
+newspapers
+·
+books
+·
+scholar
+·
+JSTOR
+(
+June 2024
+)
+(
+Learn how and when to remove this message
+)
+US trading card grading company
+Professional Sports Authenticator
+Industry
+Collectibles
+Founded
+July 1991
+Services
+Card Grading
+Parent
+Collectors Universe
+Website
+psacard
+.com
+Professional Sports Authenticator
+(
+PSA
+) is a US based
+sports card
+and
+trading card
+grading company.
+## History
+[
+edit
+]
+The PSA was founded in July 1991 by David Hall, owner of
+coin grading
+company
+Professional Coin Grading Service
+(PCGS), as a third-party sports card grader.
+[
+1
+]
+The business initially struggled because of limited demand from collectors.
+[
+2
+]
+Some dealers opposed the idea of a third-party grade their cards and refused to use card grading services.
+However, the market shifted in part due to the prevalence of dishonesty at
+trade shows
+, which caused some buyers to feel uncomfortable because of the risk of counterfeit items.
+PSA grew during the
+dot-com boom
+, where
+eBay
+established itself as an
+online auction
+website. This enabled more people to adopt the hobby of buying and selling sports cards. Having a third-party card grader helped ensure card legitimacy. It also allowed potential buyers to get a better sense of a card's value, which was not always apparent from the often low-resolution images in listings.
+[
+2
+]
+PSA's most recent controversy in December of 2025 has been rippling through the hobby because it strikes at the one thing grading companies sell: finality. The flashpoint was a widely shared account involving PSA’s buyback program. A submitter reported receiving a run of PSA 9s, later being offered repurchase at PSA 9 value, and then seeing those same cards, with the same certification numbers appear in PSA registry, but now graded as PSA 10s. PSA’s response, as relayed in hobby coverage and forum updates, has been that the episode reflected a grading/process error and that the affected submission was re-evaluated, with a portion of the original grades reportedly upgraded after review. Even if taken at face value as an operational breakdown rather than intent, the optics are brutal: the moment a grader is also participating in the market flow of graded inventory,
+collectors start asking
+whether the incentives are aligned with the customer or their profits.
+[
+3
+]
+What’s notable is how quickly the conversation widened from a grading-integrity dispute into a market-structure dispute. On December 15, 2025, PSA’s parent company, Collectors, announced a deal to acquire Beckett, one of PSA’s historic grading competitors.
+[
+4
+]
+Days later, the political pressure arrived: Congressman Pat Ryan, publicly urged the FTC to investigate Collectors’ consolidation of the grading space, citing the PSA, SGC, and Beckett roll-up and the conflicts that can follow from
+monopolizing
+the trading card market, particularly given the newly popularized asset class they represent.
+[
+5
+]
+An article published by
+The Athletic
+exposed controversial practices in the sports card industry. Yet many trimmed cards were regraded by PSA and then sold on PWCC, a resale marketplace where buyers relied on PSA's assurance that the cards were in their original condition. Many in the community contend that PSA knowingly regraded these altered cards, a practice that starkly contradicts its
+own policies
+, undermining the very purpose of its certification and giving collectors a false sense of security that leads them to overpay for their cards.
+[
+6
+]
+In
+Cardregistry v. Collectors Universe
+, PSA was accused of authenticating a 1980 Larry Bird-Magic Johnson rookie card which they later claimed to be tampered with after the sale was complete.
+[
+citation needed
+]
+When the FBI subpoenaed the card, PSA first retrieved the card from the buyer, and removed it from its sealed case which destroyed crucial evidence before the FBI had a chance to review the card. In
+Jackson v. Collectors Universe
+, PSA was sued after allegedly damaging (or switching out) a rare
+Kobe Bryant
+rookie card during grading; and despite advertising that cards in its custody were insured, PSA later admitted it had no such coverage, leaving the collector without any insurance.
+In
+Cardregistry, Inc. v. Collectors Universe, Inc.
+[
+dead link
+]
+, Case No. 1:22-cv-05308-KAM-CLP (E.D.N.Y. filed Jan. 25, 2023), PSA was accused of knowingly authenticating a tampered 1980
+Larry Bird
+,
+Magic Johnson
+Scoring Leaders card as a PSA 10, despite internal knowledge that it was not authentic.
+In
+Jackson v. Collectors Universe, Inc.
+, Case No. 30-2021-01185998-CU-PO-CJC (Cal. Super. Ct., Orange Cnty., filed Apr. 12, 2023), PSA admitted it does not carry insurance for cards in its possession, despite advertising claims suggesting otherwise.
+[
+citation needed
+]
+The first card ever graded by PSA was the
+T206 Honus Wagner
+card. Originally it achieved a NM-MT 8 grade. This card was originally owned by
+Sotheby's
+Sport's Consultant Bill Mastro, and purchased by
+Wayne Gretzky
+and
+Bruce McNall
+.
+[
+7
+]
+However, it was then speculated that the card was cut from a sheet with scissors.
+[
+7
+]
+This caused some people to question the legitimacy of PSA as a 3rd party grading service.
+[
+1
+]
+In 2005, PSA Grader Bill Hughes, a grader of the T206 Honus Wager card, admitted in an interview with
+New York Daily News
+reporter Michael O'Keeffe that he knew the card had been trimmed when he graded the card.
+[
+7
+]
+He said that it would have been sacrilegious to consider that card to be trimmed, which would have completely devalued it. This card is last known to still be in its original card slab, and has been on display at the
+National Baseball Hall Of Fame and Museum
+.
+In 2019, some online collectors began noticing cards that were modified. They began to document them, resulting in a count of at least 316 modified cards, a combined value of over $1.4 million, modified by nearly a dozen people. The practice is known as card "doctoring". The
+Federal Bureau of Investigation
+(FBI) launched a
+criminal investigation
+, which included investigating into PSA's grading practices. The FBI learned that there were potentially thousands of tampered cards in circulation, due to people looking to get a better grade from PSA and thus increase their chance at a larger profit. Speculators would purchase a low-quality card, then modify it by cutting off the worn edges or corners, enabling the card to achieve a higher grade and thus a higher price if the modification was overlooked by the grader.
+[
+citation needed
+]
+A person allegedly involved with doctoring cards is Gary Moser, who was reported to the FBI by online collectors who found his cards to be suspicious. In an interview with the
+Washington Post
+, Moser stated that he does not alter cards, and that he assesses cards to determine if they are "undergraded" - a term used to explain when a card may have been inaccurately graded by a grading company such as PSA. If Moser saw a card that looked to be undergraded, he would remove the card from the card slab and resubmit it to PSA for grading, hoping for a better grade. Oregon-based auction house PWCC said in a statement that it will no longer sell cards that were submitted to PSA by Gary Moser, and would "make it right" to any of their customers who may have purchased a doctored card from them, which included paying refunds and cooperating with other dealers to offer refunds as well.
+[
+8
+]
+## See also
+[
+edit
+]
+Collectors Universe
+List of most expensive CCG cards
+List of most expensive sports cards
+## References
+[
+edit
+]
+^
+a
+b
+"State Of The Hobby – Can We Trust The Card Graders?"
+.
+All Vintage Cards
+. February 1, 2020
+. Retrieved
+March 14,
+2022
+.
+^
+a
+b
+Bates, Greg (July 9, 2020).
+"History of card grading"
+.
+Sports Collectors Digest
+. Retrieved
+March 14,
+2022
+.
+^
+"PSA grade changed from 9 to 10 after grading completed"
+.
+Elite Fourum
+. December 4, 2025
+. Retrieved
+January 5,
+2026
+.
+^
+"PSA's owner buys card grading rival Beckett"
+.
+ESPN.com
+. December 16, 2025
+. Retrieved
+January 5,
+2026
+.
+^
+Arora, Karishma.
+"How Trading Card Games Became a Billion-Dollar Investment Market"
+.
+blog.bccresearch.com
+. Retrieved
+January 5,
+2026
+.
+^
+Strang, Katie (June 21, 2024).
+"How a scandal unfolded and shaped the battle for card collecting's soul"
+.
+The New York Times
+.
+ISSN
+0362-4331
+. Retrieved
+April 5,
+2025
+.
+^
+a
+b
+c
+Nash, Peter J. (November 14, 2013).
+"Founded On A Fraud? Collectors Universe In Denial Over Mastro's Trimmed T-206 Wagner & Role In Federal Case; PSA Threatens Lawsuit vs. HOS Over Honus (Part 5 of 10)"
+. Archived from
+the original
+on February 5, 2019
+. Retrieved
+March 14,
+2022
+.
+^
+Bogage, Jacob (July 18, 2019).
+"Baseball card collectors suspected rampant fraud in their hobby. Now the FBI is investigating"
+.
+Washington Post
+.
+ISSN
+0190-8286
+. Retrieved
+March 15,
+2022
+.
+## External links
+[
+edit
+]
+Official website
+Retrieved from "
+https://en.wikipedia.org/w/index.php?title=Professional_Sports_Authenticator&oldid=1357097150
+"
+Categories
+:
+Trading card companies
+Companies established in 1991
+Hidden categories:
+Articles needing additional references from June 2024
+All articles needing additional references
+Articles with short description
+Short description matches Wikidata
+Use mdy dates from June 2024
+All articles with unsourced statements
+Articles with unsourced statements from November 2025
+All articles with dead external links
+Articles with dead external links from August 2025
+Articles with unsourced statements from April 2025
+Articles with unsourced statements from May 2026
+Search
+Professional Sports Authenticator
+1 language
+Add topic
