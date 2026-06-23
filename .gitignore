@@ -3,3 +3,4 @@ spinwheel-key.json
 .env
 __pycache__/
 .env.local
+!eval/results_baseline.json
