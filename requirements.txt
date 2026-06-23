@@ -1,0 +1,9 @@
+google-cloud-aiplatform>=1.38.0
+google-auth>=2.23.0
+google-genai>=0.8.0
+vertexai>=1.38.0
+certifi>=2024.0.0
+fastapi>=0.109.0
+uvicorn>=0.27.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
