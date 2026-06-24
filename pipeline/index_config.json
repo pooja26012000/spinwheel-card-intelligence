@@ -1,0 +1,14 @@
+{
+  "contentsDeltaUri": "gs://spinwheel-card-intel-2630-vectors/embeddings/",
+  "config": {
+    "dimensions": 768,
+    "approximateNeighborsCount": 5,
+    "distanceMeasureType": "DOT_PRODUCT_DISTANCE",
+    "algorithm_config": {
+      "treeAhConfig": {
+        "leafNodeEmbeddingCount": 500,
+        "leafNodesToSearchPercent": 7
+      }
+    }
+  }
+}

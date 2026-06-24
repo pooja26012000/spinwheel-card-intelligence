@@ -1,0 +1,643 @@
+{
+  "timestamp": "2026-06-23T18:46:46.307956",
+  "total_questions": 30,
+  "avg_groundedness": 0.3917,
+  "avg_relevance": 0.2917,
+  "category_breakdown": {
+    "psa_grading": {
+      "avg_groundedness": 0.375,
+      "avg_relevance": 0.325,
+      "count": 10
+    },
+    "valuation": {
+      "avg_groundedness": 0.25,
+      "avg_relevance": 0.125,
+      "count": 8
+    },
+    "card_history": {
+      "avg_groundedness": 0.5,
+      "avg_relevance": 0.5416666666666666,
+      "count": 6
+    },
+    "comparison": {
+      "avg_groundedness": 0.4166666666666667,
+      "avg_relevance": 0.3333333333333333,
+      "count": 3
+    },
+    "edge_case": {
+      "avg_groundedness": 0.5833333333333334,
+      "avg_relevance": 0.08333333333333333,
+      "count": 3
+    }
+  },
+  "results": [
+    {
+      "id": "eval_001",
+      "question": "What are the criteria for a PSA 10 Gem Mint grade?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "A PSA Gem Mint 10 card is considered virtually perfect, featuring four perfectly sharp corners, sharp focus, and full original gloss. It must be free of any staining, though a slight printing imperfection may be allowed if it does not impact the card's overall appeal. The image centering on the front must be within a tolerance not exceeding approximately 55/45 percent, and 75/25 percent on the reverse.\n\nSources: [psa_complete_reference_0000]",
+      "chunks_used": [
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0001",
+        "psa_complete_reference_0008"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer starts by correctly stating that a PSA Gem Mint 10 card is virtually perfect with four perfectly sharp corners, sharp focus, and full original gloss, which is directly supported by [psa_complete_reference_0000]. However, the claims about being 'free of any staining' and allowing 'a slight printing imperfection' are not found in the description for a PSA 10 in the provided context; these details are mentioned for a PSA 9. Most importantly, the specific centering requirements ('55/45 percent' front, '75/25 percent' reverse) are completely ungrounded and contradictory to the centering mentioned for a PSA 9 in the context ('60/40' front, '90/10' reverse). These significant hallucinations and misattributions make the answer mostly ungrounded.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk ([psa_complete_reference_0000]) is highly relevant to the question, providing the criteria for a PSA 10 Gem Mint grade. The other chunks describe criteria for different grades (PSA 9, 5, 4) or discuss qualifiers and ungradable cards, which are not relevant to the specific criteria for a PSA 10."
+    },
+    {
+      "id": "eval_002",
+      "question": "What is the centering requirement for a PSA 9 card?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "For a PSA 9 (Mint) card, the centering requirement is 60/40 or better in both directions on the front of the card. Additionally, the reverse of the card must have 90/10 or better centering.\n\nSources: [psa_complete_reference_0007]",
+      "chunks_used": [
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0006",
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0005",
+        "psa_complete_reference_0004"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 1.0,
+      "groundedness_reason": "Every claim in the answer is directly supported by the provided context chunk [psa_complete_reference_0007] and no external information is introduced. The citation is also correct.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk ([psa_complete_reference_0007]) directly provides the centering requirement for a PSA 9 card. The other chunks either discuss centering in general terms or are completely irrelevant to the specific question asked."
+    },
+    {
+      "id": "eval_003",
+      "question": "What distinguishes a PSA 7 from a PSA 8?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "A PSA 8 (Near Mint to Mint) card is distinguished from a PSA 7 (Near Mint) card by stricter standards regarding centering, surface gloss, and the extent of wear.\n\nSpecifically:\n*   **Centering:** A PSA 8 requires 65/35 or better centering on the front of the card, while a PSA 7 allows for 70/30 or better centering on the front. Both grades require 90/10 or better centering on the reverse.\n*   **Gloss:** A PSA 8 card must have original gloss, whereas a PSA 7 card's gloss may be slightly broken.\n*   **Wear:** A PSA 8 permits only slight fraying on one or two corners. A PSA 7 allows for minor wear visible on the card's corners and/or edges. Both grades may show slight scratching or scuffing upon close inspection and neither allows creases. A PSA 8 also allows for a minor printing imperfection, provided the surface has original gloss.\n\nSources: [psa_complete_reference_0007]",
+      "chunks_used": [
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0003",
+        "psa_complete_reference_0002"
+      ],
+      "routing_intent": "comparison",
+      "agent_used": "comparison_agent",
+      "groundedness_score": 0.0,
+      "groundedness_reason": "The answer provides detailed descriptions and distinctions for PSA 7 and PSA 8 grades, including specifics on centering, gloss, and wear. However, the provided context chunks do not contain any information about PSA 7 or PSA 8 grades. The chunks define PSA 9 and PSA 10, discuss general PSA grading standards, and specific alteration designations, but not the grades in question. Therefore, all claims made in the answer are ungrounded and represent significant hallucination. The cited source [psa_complete_reference_0007] only describes a PSA 9 card, not PSA 7 or 8.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks provide definitions for PSA 7 or PSA 8, nor do they offer any information to distinguish between these two specific grades. The chunks discuss other grades (PSA 9, PSA 10), general PSA overview, altered cards, or even the grading of pins/coins, all of which are irrelevant to the core question."
+    },
+    {
+      "id": "eval_004",
+      "question": "What defects would cause a card to receive a PSA 5 grade?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "A card receiving a PSA 5 \u2014 Excellent grade may show moderate wear on its corners and/or edges. Minor scuffing or light scratches can be visible upon close inspection, and the surface may exhibit some loss of original gloss. However, no creases are allowed for this grade, and the card must have 85/15 or better centering in both directions on the front.\n\nSources: [psa_complete_reference_0008]",
+      "chunks_used": [
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0006",
+        "psa_complete_reference_0002"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 1.0,
+      "groundedness_reason": "Every claim in the answer is directly and accurately supported by the provided context chunk [psa_complete_reference_0008]. No external information is introduced, and the citation is correct.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk ([psa_complete_reference_0008]) is highly relevant as it directly lists the defects associated with a PSA 5 grade. The other chunks discuss PSA 9 grades, card alterations, general grading philosophy, or the grading of pins/coins, none of which directly answer what defects would cause a card to receive a PSA 5 grade."
+    },
+    {
+      "id": "eval_005",
+      "question": "How does PSA define a Mint condition card?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "A PSA Mint 9 card is considered to be in superb condition, exhibiting only one minor flaw such as a very slight wax stain on the reverse, a minor printing imperfection, or slightly out-of-register print in a non-crucial area. For centering, the card must be 60/40 or better in both directions on the front and 90/10 or better on the reverse. Essential attributes include four sharp corners, sharp focus, and full original gloss, and the card must be free of stains or creases.\n\nSources: [psa_complete_reference_0007]",
+      "chunks_used": [
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0002",
+        "psa_complete_reference_0001"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer is largely grounded in chunk [psa_complete_reference_0007]. However, it includes an ungrounded and contradictory claim: 'and the card must be free of stains or creases.' The context explicitly states that a PSA Mint 9 card 'exhibits only one of the following minor flaws: a very slight wax stain on the reverse,' directly contradicting the claim that it must be 'free of stains.' The context also does not mention 'creases' in the definition for PSA 9.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Chunk 0007 is highly relevant as it directly defines 'PSA 9 \u2014 Mint'. Chunk 0000 provides context about PSA's grading scale and defines 'PSA Gem Mint 10', which is related to 'Mint' condition. However, chunks 0004, 0002, and 0001 are entirely irrelevant, discussing altered cards, pin/coin grading, and specific qualifiers/ungradable cards, respectively."
+    },
+    {
+      "id": "eval_006",
+      "question": "What is the lowest PSA grade and what condition does it represent?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "The lowest PSA grade is PSA 1, which represents a \"Poor\" condition card. A PSA Poor 1 card displays heavy creasing, possible tape marks, writing on the front or back, severe staining, torn borders, or missing pieces of the card. Despite these significant flaws, the card must still be identifiable beyond question.\n\nSources: [psa_complete_reference_0001]",
+      "chunks_used": [
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0002",
+        "psa_complete_reference_0000"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer correctly identifies PSA 1 as the lowest grade, which is broadly supported by [psa_complete_reference_0000] stating 'PSA uses a numeric grading scale from 1 to 10, where 10 represents a perfect card and 1 represents a heavily damaged card.' However, all the specific details about what constitutes a 'PSA Poor 1 card' (e.g., heavy creasing, tape marks, writing, severe staining, torn borders, missing pieces, identifiable beyond question) are not present in any of the provided context chunks. The answer also incorrectly cites [psa_complete_reference_0001], which was not included in the provided context.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk, [psa_complete_reference_0000], is relevant. It correctly identifies the lowest PSA grade as '1' and describes its condition as 'a heavily damaged card'. While this chunk directly answers both parts of the question, the condition description is very brief. The other four chunks are entirely off-topic, discussing higher PSA grades, grading of pins/coins, or specific card alterations. Given that only one out of five chunks is relevant, a score of 0.25 ('Few chunks are relevant') is appropriate."
+    },
+    {
+      "id": "eval_007",
+      "question": "Can a PSA 10 card have any printing defects?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "Yes, a PSA 10 card can have a printing imperfection. An allowance may be made for a slight printing imperfection, provided it does not impair the overall appeal of the card. However, a PSA Gem Mint 10 card must be free of staining of any kind.\n\nSources: [psa_complete_reference_0000]",
+      "chunks_used": [
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0008",
+        "wiki_psa_0003"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.0,
+      "groundedness_reason": "The answer incorrectly states that a PSA 10 card can have a printing imperfection. The provided context [psa_complete_reference_0007] explicitly attributes 'a minor printing imperfection' to a *PSA 9* card, not a PSA 10. Chunk [psa_complete_reference_0000] describes a PSA 10 as 'virtually perfect' and specifies attributes like 'four perfectly sharp corners, sharp focus and full original gloss,' which imply the absence of printing imperfections. Therefore, the core claim of the answer is a direct contradiction of the provided information, and the cited source does not support it.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two of the five chunks are relevant. Chunk 'psa_complete_reference_0000' describes a PSA 10 as 'virtually perfect' with 'sharp focus,' implying an absence of defects. Chunk 'psa_complete_reference_0007' is highly relevant as it explicitly states that a PSA 9 *can* have a 'minor printing imperfection,' which indirectly answers the question for a PSA 10 by contrast. The remaining three chunks are off-topic, discussing alterations, lower grades, and legal issues."
+    },
+    {
+      "id": "eval_008",
+      "question": "What does PSA look for when grading card corners?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "PSA graders assess card corners based on the desired grade. For a PSA Gem Mint 10, the card must have four perfectly sharp corners. Similarly, a PSA Mint 9 card requires four sharp corners.\n\nAs the grade decreases, more minor flaws are permitted. A PSA Near Mint to Mint 8 allows for only slight fraying on one or two corners, while a PSA Near Mint 7 may show only minor wear on the corners and/or edges. For a PSA Excellent to Mint 6, slight surface wear can begin to show on the card's corners and/or edges.\n\nSources: [psa_complete_reference_0002, psa_complete_reference_0000, psa_complete_reference_0004, psa_complete_reference_0007, psa_complete_reference_0005]",
+      "chunks_used": [
+        "psa_complete_reference_0002",
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0005"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The first part of the answer, detailing corner requirements for PSA Gem Mint 10 and PSA Mint 9, is accurately grounded in chunks [psa_complete_reference_0000] and [psa_complete_reference_0007]. However, the second paragraph describing corner requirements for PSA Near Mint to Mint 8, PSA Near Mint 7, and PSA Excellent to Mint 6 is completely ungrounded. The provided context chunks do not contain any information about these specific grades or their associated corner flaws. This constitutes significant hallucination, rendering a large portion of the answer unsupported by the given context.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two chunks ([psa_complete_reference_0000] and [psa_complete_reference_0007]) directly mention 'sharp corners' or 'perfectly sharp corners' as requirements for PSA 10 and PSA 9 grades, which is highly relevant. However, the other three chunks ([psa_complete_reference_0002], [psa_complete_reference_0004], and [psa_complete_reference_0005]) are irrelevant, discussing pin/coin grading, card alterations/miscuts, or general grading principles without mentioning corners."
+    },
+    {
+      "id": "eval_009",
+      "question": "How does PSA grade card surface condition?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "PSA assesses card surface condition by examining attributes such as gloss, focus, printing imperfections, stains, scratches, and scuffing. For a PSA Gem Mint 10, the card must have full original gloss, sharp focus, be free of staining, and allows only a slight printing imperfection if it doesn't impair overall appeal. A PSA 9 Mint card also requires full original gloss, sharp focus, and to be free of stains, but can have a very slight wax stain on the reverse or a minor printing imperfection.\n\nAs grades decrease, more significant surface flaws are permitted. For example, a PSA 8 Near Mint to Mint allows slight scratching and a minor printing imperfection, while a PSA 7 Near Mint may have slightly broken gloss and slight scuffing or light scratches. Lower grades like PSA 4 Very Good to Excellent show notable loss of original gloss, and PSA 3 Very Good permits heavy scuffing, light staining, and moderate gloss loss. Cards with applied foreign substances or removed stains are designated N3 \"Evidence of Alteration\" and can qualify as \"Authentic Altered.\"\n\nSources: [psa_complete_reference_0004, psa_complete_reference_0007, psa_complete_reference_0000, psa_complete_reference_0008]",
+      "chunks_used": [
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0002"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer makes several ungrounded claims. While the initial general statement about attributes is mostly supported, the detailed definitions for PSA 10 and 9 contain inaccuracies or statements not directly supported by the provided chunks (e.g., PSA 10 being 'free of staining' or allowing 'slight printing imperfection', PSA 9 being 'free of stains' which contradicts the chunk). Furthermore, entire descriptions for PSA 8, PSA 7, and PSA 3 are complete hallucinations as these grades are not present in the provided context chunks. The specific designation 'N3 'Evidence of Alteration'' is also not mentioned in the chunks. This constitutes significant hallucination.",
+      "relevance_score": 0.75,
+      "relevance_reason": "Three chunks (0000, 0007, 0008) are highly relevant, detailing specific surface criteria like gloss, focus, scuffing, scratches, and wax stains for different grades. Chunk 0004 is somewhat relevant as it discusses surface alterations (foreign substances, stains) and how they are designated by PSA. However, chunk 0002 is completely irrelevant as it pertains to the grading of pins/coins, not cards."
+    },
+    {
+      "id": "eval_010",
+      "question": "What is a half-point grade in PSA grading?",
+      "category": "psa_grading",
+      "expected_grounded": true,
+      "answer": "A half-point grade in PSA grading, such as a PSA Fair 1.5, represents a specific level of condition for a sports card. A PSA Fair 1.5 card shows excessive wear on its corners and surface, displaying heavy creasing or crinkle marks, and possibly tape marks or writing. Despite being heavily worn, the card itself remains intact and the image identifiable. Notably, pins and coins do not currently receive half-point grades.\n\nSources: [psa_complete_reference_0008, psa_complete_reference_0002]",
+      "chunks_used": [
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0002",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0000"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.0,
+      "groundedness_reason": "The answer hallucinates the concept of 'half-point grades' and specifically 'PSA Fair 1.5', along with its characteristics. None of the provided context chunks mention half-point grades or describe PSA 1.5. The context only discusses full-point grades like PSA 10, 9, 5, and 4. The sources cited do not support any of the claims made in the answer.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks explain what a half-point grade is in PSA grading. They describe whole number grades (PSA 10, 9, 5, 4) or specific grading designations (miscut, altered), but do not mention half-point grades or their criteria."
+    },
+    {
+      "id": "eval_011",
+      "question": "What makes a rookie card more valuable than other cards?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "Rookie cards are primarily distinguished as more valuable than other cards because they represent the *first* trading card featuring an athlete after their participation in the highest level of competition within their sport (Chunk 1, Chunk 5). Collectors tend to value these inaugural appearances more than subsequent card issues (Chunk 1). This \"first appearance\" status can lead to prices surpassing thousands of dollars (Chunk 1), and rookie cards often comprise \"most of the top most expensive sports cards\" (Chunk 2).\n\nWhile the \"first appearance\" is a unique value driver for rookie cards, both rookie cards and other cards have their value significantly influenced by:\n\n*   **Athlete Popularity, Consumer Interest, and Supply and Demand:** Prices for all cards fluctuate based on these market factors (Chunk 1).\n*   **Condition/Grade:** A card's condition plays a \"huge role in the price\" (Chunk 4). For example, a 1952 Topps Mickey Mantle (a famous rookie card) graded SGC Mint+ 9.5 sold for a record $12.6 million, while other 1952 Topps Mantle cards graded 1 sold for only a few thousand dollars (Chunk 2, Chunk 4). This illustrates how critical condition is for any card's valuation.\n*   **Rarity and Historical Significance:** Rare cards, such as the T206 Honus Wagner, are highly valuable. One T206 Honus Wagner card sold for $6.606 million (Chunk 2, Chunk 5), and another for $3.75 million in 2021 (Chunk 4). While the Honus Wagner card is also a rookie card, rarity in general contributes to the value of baseball cards (Chunk 5).\n\nThe market appears to give \"far greater credence and value\" to a player's initial card appearances. For example, the 1996 Sports Illustrated for Kids card featuring a young Tiger Woods, despite being unlicensed, is valued \"exponentially more\" by the market than a 2001 Upper Deck card that Beckett designated as his rookie card (Chunk 2). This highlights the premium placed on the earliest recognized appearance, even when a formal definition of a \"rookie card\" is debated (Chunk 2).\n\nSources: [wiki_rookie_card_0000, wiki_rookie_card_0001, wiki_rookie_card_0003, wiki_baseball_card_0016, wiki_baseball_card_0017]",
+      "chunks_used": [
+        "wiki_rookie_card_0000",
+        "wiki_rookie_card_0001",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0016",
+        "wiki_baseball_card_0017",
+        "wiki_rookie_card_0005",
+        "wiki_rookie_card_0004"
+      ],
+      "routing_intent": "comparison",
+      "agent_used": "comparison_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer correctly defines a rookie card from Chunk 1 and mentions Honus Wagner as a famous rookie card, also from Chunk 1. However, the vast majority of the explanation regarding *why* rookie cards are valuable, which is the core of the question, is ungrounded. This includes claims about prices surpassing thousands of dollars, rookie cards comprising 'most of the top most expensive cards', specific factors like athlete popularity, supply and demand, condition/grade, rarity, and all the specific sales figures for Mickey Mantle and Honus Wagner cards. The detailed comparison of Tiger Woods cards and their market valuation is also ungrounded. Many chunks are incorrectly cited for information not present within them. This constitutes significant hallucination, making the answer mostly ungrounded despite a few initial accurate points.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the provided chunks explain *what makes* a rookie card more valuable than other cards. They define what a rookie card is, discuss debates about their definition, list references/external links, and talk generally about baseball card classification and collectors, but they do not provide reasons or factors contributing to their higher value."
+    },
+    {
+      "id": "eval_012",
+      "question": "How does card condition affect its market value?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "Card condition significantly affects its market value, with higher graded cards commanding much greater prices. For instance, in valuing a card, potential buyers consider its condition or graded condition. A 1952 Topps Mickey Mantle card graded PSA 9 sold for $2,880,000, and another graded 9.5 by SGC sold for $12,600,000. In contrast, other 1952 Topps Mantle cards graded 1 have sold for as little as a few thousand dollars, demonstrating the huge role condition plays in price.\n\nSources: [chunk_3, chunk_4]",
+      "chunks_used": [
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0004",
+        "wiki_baseball_card_0017",
+        "wiki_baseball_card_0016",
+        "psa_complete_reference_0007"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.0,
+      "groundedness_reason": "The answer completely hallucinates all specific details regarding card sales, prices, and the direct link between card condition/grades and market value. None of the provided context chunks discuss market value, specific card sales (like the Mickey Mantle examples), or the financial impact of grading. The context only describes various PSA grades and their physical characteristics, methods of alteration, and general information about collectors/dealers or card classification. The general premise that condition affects value is not explicitly stated, nor are the specific examples supported by the provided text.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two chunks ([psa_complete_reference_0008] and [psa_complete_reference_0007]) are highly relevant as they define specific PSA card grades, which directly explain how different conditions are categorized and thus affect market value. One chunk ([psa_complete_reference_0004]) is relevant as it discusses alterations, which are a form of condition issue that significantly impacts value. However, two chunks ([wiki_baseball_card_0017] and [wiki_baseball_card_0016]) are irrelevant; they discuss collectors and dealers or card classification by type/era, not how card condition affects its market value. Therefore, some chunks are relevant while others are not."
+    },
+    {
+      "id": "eval_013",
+      "question": "What is a population report and why does it matter for card value?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "The provided context does not contain enough information to define what a population report is or why it matters for card value. While the chunks highlight that \"Condition can play a huge role in the price\" of cards, with high-graded cards (e.g., PSA 9 and SGC 9.5) selling for millions compared to lower-graded cards, they do not explain the concept of a population report or how it relates to valuation.\n\nSources: [wiki_baseball_card_0016, wiki_baseball_card_0017]",
+      "chunks_used": [
+        "wiki_baseball_card_0016",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0017",
+        "wiki_baseball_card_0015",
+        "wiki_baseball_card_0028"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The AI correctly states that the context does not define 'population report' or its relevance to card value. However, it then hallucinates by claiming that 'the chunks highlight that 'Condition can play a huge role in the price' of cards, with high-graded cards (e.g., PSA 9 and SGC 9.5) selling for millions compared to lower-graded cards.' None of the provided chunks support these specific claims about condition, PSA/SGC grades, or millions in sales directly tied to such grades. The sources cited also do not support these ungrounded claims.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks define what a 'population report' is, nor do they explain its significance for card value. The chunks discuss general topics like card classification, references, collectors, trade impacts, and market trends, but entirely miss the core concepts of the question."
+    },
+    {
+      "id": "eval_014",
+      "question": "Why are low population PSA 10 cards especially valuable?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "PSA Gem Mint 10 cards are especially valuable because they represent a virtually perfect card, characterized by attributes such as four perfectly sharp corners, sharp focus, and full original gloss, along with precise centering (Chunk 1). The context emphasizes that condition plays a huge role in a card's price; for instance, a 1952 Topps Mickey Mantle card graded PSA 9 sold for $2,880,000, while others graded PSA 1 sold for only a few thousand dollars (Chunk 3). Since cards achieving the \"virtually perfect\" PSA 10 standard are inherently difficult to find due to their stringent criteria, and \"rare baseball cards are difficult to find,\" collectors highly seek these cards for their superior condition and scarcity (Chunk 1, Chunk 5).\n\nSources: [psa_complete_reference_0000, wiki_baseball_card_0016, wiki_baseball_card_0017]",
+      "chunks_used": [
+        "psa_complete_reference_0000",
+        "wiki_psa_0005",
+        "wiki_baseball_card_0016",
+        "wiki_psa_0001",
+        "wiki_baseball_card_0017"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer contains significant hallucination. While it correctly defines PSA 10 attributes from `psa_complete_reference_0000`, it adds 'precise centering' which is not in the chunk. Crucially, the answer invents a detailed example of a '1952 Topps Mickey Mantle card graded PSA 9 selling for $2,880,000' and a PSA 1 card selling for 'a few thousand dollars', along with the claim that 'condition plays a huge role in a card's price.' None of these specific facts, numbers, or card examples are present in any of the provided context chunks. The citation 'Chunk 3' is also invalid. Although it correctly uses 'rare baseball cards are difficult to find' from `wiki_baseball_card_0017`, the substantial fabrication for explaining value severely undermines its groundedness. Additionally, the answer doesn't address the 'low population' aspect of the question, as this term is not defined or discussed in the provided chunks.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks explain why 'low population' PSA 10 cards are especially valuable. While one chunk defines what a PSA 10 card is, it does not address the core question of their specific value or the impact of 'low population'. The other chunks are completely irrelevant, covering PSA history, baseball card classification, or general references."
+    },
+    {
+      "id": "eval_015",
+      "question": "What role does rarity play in sports card valuation?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "Rarity plays a significant role in sports card valuation because rare cards are difficult to find, increasing their demand among collectors. Collectors actively seek out these rare cards in the trading or selling market. For example, the T206 Honus Wagner card and high-grade 1952 Topps Mickey Mantle cards are among the most valuable sports cards, explicitly referenced as rare and selling for millions of dollars. The condition of such a rare card also heavily influences its final price.\n\nSources: [wiki_baseball_card_0016, wiki_baseball_card_0017, wiki_rookie_card_0001]",
+      "chunks_used": [
+        "wiki_baseball_card_0016",
+        "wiki_baseball_card_0017",
+        "wiki_rookie_card_0003",
+        "wiki_rookie_card_0001",
+        "wiki_baseball_card_0028"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer starts with grounded claims about rarity making cards difficult to find and collectors seeking them, which is supported by [wiki_baseball_card_0017]. However, it then introduces significant hallucinations: specific card examples (T206 Honus Wagner, 1952 Topps Mickey Mantle), specific monetary values ('millions of dollars'), and the impact of card 'condition' on price. None of these details are present in any of the provided context chunks. Furthermore, chunks [wiki_baseball_card_0016] and [wiki_rookie_card_0001] are cited but do not support any claims made in the answer.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk (wiki_baseball_card_0017) directly addresses rarity's role in the trading/selling market. The other chunks are either off-topic (card classification, rookie card debate) or merely lists of references, providing no content on the question of rarity's influence on valuation."
+    },
+    {
+      "id": "eval_016",
+      "question": "How does player performance affect the value of their cards?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "The provided context chunks do not contain enough information to explicitly state how player performance affects the value of their cards.\n\nHowever, Chunk 5 notes that trading cards are highly collected based on the \"popularity of the athlete\" and that prices for rookie cards fluctuate based on \"consumer interest, supply and demand and other factors.\" While player performance typically contributes to an athlete's popularity and consumer interest, the chunks do not directly establish this link. Other factors mentioned as influencing card value include card condition, rarity, and a card being a \"rookie card\" (Chunks 1, 4, 5).\n\nSources: [wiki_baseball_card_0016, wiki_baseball_card_0017, wiki_rookie_card_0000]",
+      "chunks_used": [
+        "wiki_baseball_card_0016",
+        "wiki_upper_deck_0011",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0017",
+        "wiki_rookie_card_0000"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer correctly identifies that the context chunks do not contain enough information about how player performance affects card value. However, it then introduces significant hallucinations and misattributions. It falsely claims that 'Chunk 5' (wiki_rookie_card_0000) mentions 'popularity of the athlete', 'consumer interest', 'supply and demand', or 'other factors' influencing prices\u2014none of these terms are in that chunk. It also hallucinates 'card condition' as a factor mentioned in the chunks. These are major errors that severely undermine the groundedness, despite the initial correct observation.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks explain how player performance affects the value of their cards. The chunks discuss card classification, types of cards (memorabilia, rookie), collectors, and references, but they do not describe the mechanism by which a player's on-field achievements or decline in performance influences the monetary value of their trading cards."
+    },
+    {
+      "id": "eval_017",
+      "question": "What is the most expensive baseball card ever sold?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "The most expensive baseball card ever sold is a 1952 Topps Mickey Mantle card, graded SGC MT 9.5. This card was sold for $12.600 million on August 28, 2022, becoming the most valuable Topps card ever and the most valuable trading card of all time. It also set a new record for sports memorabilia.\n\nSources: [wiki_topps_0010, wiki_rookie_card_0003, wiki_baseball_card_0017, wiki_baseball_card_0016]",
+      "chunks_used": [
+        "wiki_topps_0010",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0017",
+        "wiki_baseball_card_0014",
+        "wiki_baseball_card_0016"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.0,
+      "groundedness_reason": "The AI answer provides specific details about the most expensive baseball card (1952 Topps Mickey Mantle, graded SGC MT 9.5, sold for $12.600 million on August 28, 2022) which are entirely unsupported by the provided context chunks. None of the chunks contain any information about specific card sales, prices, dates, or record-breaking values. The answer is a complete hallucination relative to the given context.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks provide information about the most expensive baseball card ever sold. They discuss general aspects of baseball card collecting, classification, and historical incidents, but do not address the specific question about a record-breaking sale."
+    },
+    {
+      "id": "eval_018",
+      "question": "What factors make a 1952 Topps Mickey Mantle card valuable?",
+      "category": "valuation",
+      "expected_grounded": true,
+      "answer": "A 1952 Topps Mickey Mantle card is valuable primarily due to its condition (or graded condition), with higher grades fetching significantly higher prices; for example, a card graded 9.5 sold for $12.6 million, while those graded 1 sold for only a few thousand dollars (Chunk 3). Its scarcity also contributes to its value, as it is card No. 311, part of the \"high numbers\" series from 1952. Topps often printed these last series in smaller quantities or disposed of surplus, making them much scarcer and more valuable (Chunk 4). Additionally, it is Mickey Mantle's first Topps card, making it a highly significant and the most valuable Topps card ever, and as of August 2022, the most valuable trading card of all time (Chunk 4).\n\nSources: [Chunk 1, Chunk 3, Chunk 4]",
+      "chunks_used": [
+        "wiki_baseball_card_0017",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0016",
+        "wiki_topps_0010",
+        "wiki_baseball_card_0028"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer introduces significant hallucinated information not present in the provided context chunks. Claims about condition/graded condition, specific sale prices ($12.6 million, few thousand dollars), the card number (No. 311), it being Mickey Mantle's first Topps card, the most valuable Topps card ever, and the most valuable trading card of all time are entirely ungrounded. Chunk 3, cited for the condition and sales figures, is a list of references and contains none of this information. While Chunk 4 does mention that 'high numbers' from 1952 were scarcer and more valuable due to surplus disposal, it does not mention Mickey Mantle or his specific card, making the direct application to the 1952 Topps Mickey Mantle card ungrounded in its specifics.",
+      "relevance_score": 0.25,
+      "relevance_reason": "Only one chunk (wiki_topps_0010) directly discusses factors that contribute to the value of 1952 Topps cards (scarcity of high numbers). The other chunks are either irrelevant, reference lists, or too general to answer the specific question about the 1952 Topps Mickey Mantle card's value factors."
+    },
+    {
+      "id": "eval_019",
+      "question": "What is a rookie card?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "A rookie card is a trading card that is the first to feature an athlete after they have participated in the highest level of competition within their sport. Collectors often value these first appearances more than subsequent card issues. While prices can fluctuate due to consumer interest and supply/demand, they can reach thousands of dollars. It is generally agreed that a true rookie card must be part of a product's base set, with limited quantity insert cards typically not considered rookie cards.\n\nSources: [Chunk 1]",
+      "chunks_used": [
+        "wiki_rookie_card_0000",
+        "wiki_rookie_card_0001",
+        "wiki_rookie_card_0003",
+        "wiki_rookie_card_0005",
+        "wiki_baseball_card_0010"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The first sentence is fully grounded in chunk [wiki_rookie_card_0000]. The second sentence, while a reasonable inference in the context of collecting, is not explicitly stated in the provided chunks. The third sentence hallucinates the claim that prices 'can reach thousands of dollars' and mentions 'consumer interest and supply/demand' without explicit support. Chunk [wiki_baseball_card_0010] only mentions a suggested retail price of 99 cents per pack. The fourth sentence completely hallucinates the distinction between 'base set' and 'limited quantity insert cards' and the idea that this is 'generally agreed.' Chunk [wiki_rookie_card_0001] actually describes a 'debate' in the hobby, but not about these specific criteria. The answer introduces significant details not present in the context, making it mostly ungrounded despite an accurate initial definition.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Chunks [wiki_rookie_card_0000] and [wiki_rookie_card_0001] are highly relevant, providing a direct definition and important contextual debate about what constitutes a rookie card. However, chunks [wiki_rookie_card_0003] (references) and [wiki_rookie_card_0005] (external links) are completely irrelevant. Chunk [wiki_baseball_card_0010] mentions a specific rookie card but doesn't contribute to defining the concept, making it only tangentially relevant at best."
+    },
+    {
+      "id": "eval_020",
+      "question": "When did Topps start producing baseball cards?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "Topps produced its first baseball cards in 1951 with two sets known as Red Backs and Blue Backs. These cards had rounded corners and were designed to simulate a baseball game. However, Topps changed its approach in 1952, creating a larger set of cards packaged with bubble gum, which the company now considers its first true baseball card set. This 1952 set, designed by Sy Berger and Woody Gelman, featured color portraits, statistical and biographical information, and square corners, setting a new standard for modern baseball cards.\n\nSources: [Chunk 1, Chunk 3, Chunk 4]",
+      "chunks_used": [
+        "wiki_topps_0009",
+        "wiki_topps_0000",
+        "wiki_topps_0001",
+        "wiki_baseball_card_0007",
+        "wiki_baseball_card_0000"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer contains several ungrounded claims. It incorrectly states that the 1952 Topps set was 'packaged with bubble gum' (not explicitly stated for this specific set in the chunks, only generally for 1950s cards) and that 'the company now considers its first true baseball card set' when the context states it's 'considered by collectors as the first modern baseball card set.' Most notably, the claim of 'square corners' for the 1952 set is a hallucination and directly unsupported by the provided chunks, which only mention 'rounded corners' for the 1951 sets. While much of the answer is supported, these specific details constitute significant hallucination and misrepresentation.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two chunks ([wiki_topps_0009] and [wiki_baseball_card_0007]) directly state when Topps began producing baseball cards (1951 and 1952 respectively). The other three chunks are either general Wikipedia headers, discuss the founding of Topps for chewing gum, or provide general information about baseball cards, none of which answer the specific question."
+    },
+    {
+      "id": "eval_021",
+      "question": "What is the history of PSA as a grading company?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "Professional Sports Authenticator (PSA) was founded in July 1991 by David Hall, who also owned the coin grading company Professional Coin Grading Service (PCGS). Initially, the business faced difficulties due to limited demand from collectors and opposition from some dealers. However, the market shifted as dishonesty at trade shows made buyers uncomfortable, leading to increased demand for third-party authentication to ensure card legitimacy and value, especially with the rise of online auction sites like eBay during the dot-com boom. PSA is a US-based sports and trading card grading company, and its parent company is Collectors Universe.\n\nSources: [wiki_psa_0001, wiki_psa_0000]",
+      "chunks_used": [
+        "wiki_psa_0001",
+        "wiki_psa_0000",
+        "wiki_psa_0003",
+        "wiki_psa_0002",
+        "wiki_psa_0005"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.75,
+      "groundedness_reason": "The answer is mostly grounded. It correctly identifies the founding date, founder, initial struggles, and the reason for the market shift (dishonesty at trade shows) based on chunk [wiki_psa_0001]. It also correctly identifies PSA as a US trading card grading company based on [wiki_psa_0000] and [wiki_psa_0001]. However, it introduces an ungrounded detail, 'especially with the rise of online auction sites like eBay during the dot-com boom,' which is not present in any of the provided chunks (hallucination). Additionally, while the claim that 'its parent company is Collectors Universe' is supported by other provided chunks ([wiki_psa_0002], [wiki_psa_0003], [wiki_psa_0005]), these specific chunks were not cited in the answer, making the claim ungrounded *as per the provided citations*.",
+      "relevance_score": 0.75,
+      "relevance_reason": "Chunk [wiki_psa_0001] is highly relevant, detailing PSA's founding and early challenges. Chunks [wiki_psa_0003] and [wiki_psa_0002] are also relevant, describing significant events and business developments in PSA's history. However, chunks [wiki_psa_0000] and [wiki_psa_0005] are largely boilerplate Wikipedia text, containing metadata ('Jump to content', 'needs citations', 'See also', 'References') rather than direct historical content about the company, making them off-topic."
+    },
+    {
+      "id": "eval_022",
+      "question": "What are the most collected baseball card sets?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "The 1952 Topps set is considered the most sought-after post-World War set among collectors. This is primarily due to the scarcity of the Mickey Mantle rookie card, which is the first Mantle card issued by Topps and remains the most valuable Topps card ever. For cards produced pre-1951, sets like 1909\u20131911 White Borders (T206), 1910 Philadelphia Caramels (E95), and 1909 Box Tops (W555) are most commonly referred to by their American Card Catalog numbers, highlighting their significance in collecting. The T206 Honus Wagner card from the 1909\u20131911 White Borders set is also one of the most valuable cards, with one selling for $3,750,000 in May 2021.\n\nSources: [Chunk 1, Chunk 3, Chunk 4]",
+      "chunks_used": [
+        "wiki_baseball_card_0016",
+        "wiki_baseball_card_0028",
+        "wiki_baseball_card_0007",
+        "wiki_topps_0010",
+        "wiki_baseball_card_0017"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "While the answer correctly identifies the 1952 Topps set as 'most sought-after post-World War set' (Chunk 3), the vast majority of the subsequent claims and details are ungrounded. It hallucinates the reason for the 1952 Topps set's value (Mickey Mantle card), introduces specific pre-1951 sets (1910 Philadelphia Caramels, 1909 Box Tops), specific catalog numbers (T206, E95, W555), and the T206 Honus Wagner card's value/sale, none of which are present in the provided context chunks. Furthermore, Chunk 4 is incorrectly cited as it does not support any of the claims it's associated with in the answer.",
+      "relevance_score": 0.75,
+      "relevance_reason": "Three of the five chunks are relevant to the question. Chunk [wiki_baseball_card_0007] directly identifies the '1952 Topps set' as 'the most sought-after,' providing a direct answer. Chunk [wiki_baseball_card_0016] mentions '1909\u20131911 Wh' sets in the context of collector classification, which are indeed notable collected sets. Chunk [wiki_topps_0010] discusses Topps cards up to 1974, highlighting 'high numbers' as scarcer and more valuable, indirectly pointing to the collectibility of these sets. The remaining two chunks ([wiki_baseball_card_0028] and [wiki_baseball_card_0017]) are off-topic, focusing on references/citations and general collector/dealer information, respectively, rather than specific collected sets."
+    },
+    {
+      "id": "eval_023",
+      "question": "What makes a card a short print?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "The provided context chunks do not contain information about what makes a card a short print. Therefore, I cannot answer your question.\n\nSources: []",
+      "chunks_used": [
+        "psa_complete_reference_0003",
+        "wiki_baseball_card_0015",
+        "psa_complete_reference_0001",
+        "psa_complete_reference_0004",
+        "psa_complete_reference_0008"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 1.0,
+      "groundedness_reason": "The answer accurately states that the provided context chunks do not contain information about what makes a card a short print. It does not introduce any ungrounded information or hallucinations, and correctly refrains from answering the question based on the given context. This is a fully grounded response.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the provided chunks discuss what constitutes a 'short print' card. They cover topics like card grading standards, alterations, tariffs, and ungradable conditions, which are unrelated to the question."
+    },
+    {
+      "id": "eval_024",
+      "question": "How has the sports card market changed over the decades?",
+      "category": "card_history",
+      "expected_grounded": true,
+      "answer": "The sports card market has undergone significant changes over the decades. Initially, cards in the United States were aimed at adults and produced by photographers and tobacco companies. By the early 1910s, confection companies and games began distributing card sets (Chunk 1).\n\nEconomic factors like World War I, World War II, and the Great Depression severely impacted card production, with WWI significantly suppressing it (Chunk 1). The 1994 players' strike also led to a decline in interest and industry consolidation. However, the advent of third-party grading companies and online marketing revitalized the vintage card market, leading to multi-million dollar sales (Chunk 1).\n\nMore recently, companies have transitioned from traditional cardboard materials to other materials (Chunk 3). There's been a significant shift towards online markets, with companies like Topps issuing digital cards and apps like Topps Bunt (Chunk 3, Chunk 4). This shift also led to a decline in customer bases for physical hobby shops as buyers moved online for better access and prices (Chunk 4). The market received a large boost in popularity in 2020, partly due to the COVID-19 pandemic (Chunk 3). Additionally, new guidelines now require players to be on a Major League roster for a rookie card to be released, which must feature a designated logo (Chunk 4).\n\nSources: [wiki_baseball_card_0018, wiki_baseball_card_0014, wiki_baseball_card_0013]",
+      "chunks_used": [
+        "wiki_baseball_card_0018",
+        "wiki_baseball_card_0028",
+        "wiki_baseball_card_0014",
+        "wiki_baseball_card_0013",
+        "wiki_baseball_card_0027"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer accurately summarizes the early market changes from Chunk 1. However, a significant portion of the answer is ungrounded, introducing numerous facts and events (economic impacts, 1994 players' strike, third-party grading, material changes, rookie card guidelines) not present in the provided context chunks. Several claims, while partially true (e.g., shift to online markets, pandemic boost), include unsupported details or are incorrectly cited.",
+      "relevance_score": 0.75,
+      "relevance_reason": "Three out of five chunks are highly relevant, detailing historical changes in production and target audience, recent market trends like the pandemic boom, and modern shifts towards online markets and investor focus. The other two chunks are off-topic; one describes a specific card production incident, and the other is mostly citations without providing direct information on market changes."
+    },
+    {
+      "id": "eval_025",
+      "question": "What is the difference between a PSA 9 and a PSA 10 in terms of value?",
+      "category": "comparison",
+      "expected_grounded": true,
+      "answer": "Based on the provided context, a PSA Gem Mint 10 card is a virtually perfect card, while a PSA Mint 9 card is a superb condition card that exhibits only one minor flaw.\n\nKey differences in condition:\n*   **Perfection:** A PSA Gem Mint 10 is described as \"virtually perfect,\" whereas a PSA Mint 9 is a \"superb condition card.\"\n*   **Allowed Flaws:**\n    *   **PSA 9 (Mint):** May exhibit *only one* of the following minor flaws: a very slight wax stain on the reverse, a minor printing imperfection, or slightly out-of-register print on a non-crucial area. It must be free of stains or creases, have four sharp corners, sharp focus, and full original gloss.\n    *   **PSA 10 (Gem Mint):** Must be free of staining of any kind, but \"an allowance may be made for a slight printing imperfection, if it doesn't impair the overall appeal of the card.\" It requires four perfectly sharp corners, sharp focus, and full original gloss.\n*   **Centering:**\n    *   **PSA 9:** Requires 60/40 or better centering in both directions on the front, and 90/10 or better centering on the reverse.\n    *   **PSA 10:** Requires centering not to exceed approximately 55/45 percent on the front, and 75/25 percent on the reverse.\n\nRegarding the difference in value, the provided context chunks describe the physical characteristics distinguishing a PSA 9 from a PSA 10, and acknowledge that PSA uses a numeric grading scale from 1 to 10, where 10 represents a perfect card and 1 represents a heavily damaged card. One chunk mentions a controversy where PSA 9s were repurchased at \"PSA 9 value\" and later appeared as \"PSA 10s\" in the registry, implying a difference in market value between the two grades. However, the chunks do not provide any specific information, numbers, or percentages to quantify the monetary difference in value between a PSA 9 and a PSA 10.\n\nSources: [psa_complete_reference_0007, psa_complete_reference_0000, wiki_psa_0001]",
+      "chunks_used": [
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0000",
+        "wiki_psa_0005",
+        "wiki_psa_0001",
+        "wiki_psa_0003",
+        "psa_complete_reference_0008"
+      ],
+      "routing_intent": "comparison",
+      "agent_used": "comparison_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "The answer contains significant hallucinations and ungrounded claims, especially regarding the detailed grading criteria for PSA 9 and PSA 10. While it correctly states that the chunks do not quantify the monetary difference in value, the preceding explanations for condition differences, which are crucial context, are flawed. \n\nSpecifically:\n1.  **PSA 9 Flaws:** The claim 'It must be free of stains or creases' for a PSA 9 contradicts the context, which states a 'very slight wax stain on the reverse' is an allowed minor flaw ([psa_complete_reference_0007]). Creases are not mentioned as allowed/disallowed for PSA 9.\n2.  **PSA 10 Flaws:** The detailed claims about PSA 10 being 'free of staining of any kind' and allowing 'a slight printing imperfection, if it doesn't impair the overall appeal' are not present in the provided context chunks for PSA 10, which are cut short and only state 'virtually perfect card' with 'four perfectly sharp corners, sharp focus and full original gloss' ([psa_complete_reference_0000]). This is a hallucination.\n3.  **PSA 10 Centering:** The specific centering requirements for PSA 10 ('not to exceed approximately 55/45 percent on the front, and 75/25 percent on the reverse') are entirely ungrounded and not present in any of the provided chunks ([psa_complete_reference_0000]). This is a significant hallucination of technical data.\n4.  **Value Anecdote:** The claim about 'PSA 9s were repurchased at 'PSA 9 value' and later appeared as 'PSA 10s' in the registry' is an embellishment and misinterpretation of the provided context. Chunk [wiki_psa_0005] only mentions 'PSA grade changed from 9 to 10 after grading completed' from an Elite Fourum post, without the additional details of repurchasing or registry appearance.\n\nWhile some parts are correctly extracted (e.g., initial definitions, PSA 9 centering, and the ultimate conclusion about the lack of quantified monetary value), the widespread and significant inaccuracies in the detailed comparison of the grades lead to a low groundedness score.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two chunks (psa_complete_reference_0007 and psa_complete_reference_0000) are highly relevant as they describe the characteristics of PSA 9 and PSA 10 cards, respectively. These definitions are crucial for understanding the differences that lead to varying values. However, the other four chunks are completely irrelevant, discussing PSA history, references, other grade definitions (PSA 5, PSA 4), or controversies, which do not contribute to answering the question about the value difference between PSA 9 and PSA 10."
+    },
+    {
+      "id": "eval_026",
+      "question": "How does a graded card differ from a raw ungraded card in terms of value?",
+      "category": "comparison",
+      "expected_grounded": true,
+      "answer": "A graded card differs significantly from a raw ungraded card in terms of value primarily due to the authentication, standardization, and specific condition assessment provided by a professional grading service.\n\nHere's a breakdown:\n\n*   **Standardized Condition Assessment:** Graded cards, such as those assessed by Professional Sports Authenticator (PSA), receive a numeric grade on a scale from 1 (heavily damaged) to 10 (perfect) (Chunk 5). This scale includes detailed definitions for each grade, from PSA 10 Gem Mint (virtually perfect, 55/45 centering on front) down to PSA 1 Poor (heavy creasing, severe staining) (Chunks 4, 5, 7). This objective assessment provides a clear, universally understood measure of the card's condition, which a raw card lacks.\n*   **Authentication and Trust:** PSA is described as the \"world's largest and most trusted third-party trading card authentication and grading company\" (Chunk 5). Their grading standards have \"become the official standard for the most valuable cards in the hobby\" (Chunk 1). A raw card, by contrast, has not undergone this authentication process, meaning its condition and authenticity are subject to individual opinion rather than an expert, third-party verification.\n*   **Price Guide Inclusion:** Price guides, such as the Beckett price guide series, are specifically \"graded card price guide[s],\" meaning they list prices based on the 1\u201310 grading scale (Chunk 2). This indicates that graded cards have established market values tied to their specific grade, allowing for more transparent and consistent valuation. Raw, ungraded cards do not typically feature in these price guides with a definitive value.\n*   **Encapsulation Options:** In certain cases, even altered or miscut cards can qualify for encapsulation as \"Authentic Altered\" or \"Authentic\" if specified, which still involves a grading fee and acknowledges a professional assessment (Chunk 1). This contrasts with a raw card where such distinctions would not be officially noted.\n\nIn essence, while the chunks do not provide specific numerical value differences between a graded and ungraded version of the *same* card, they strongly imply that grading, especially by reputable companies like PSA, provides a trusted, standardized, and verifiable assessment that is crucial for determining the value of \"the most valuable cards in the hobby\" and for inclusion in established price guides. A raw card lacks this official, third-party authentication and condition clarity, making its perceived value more subjective and less quantifiable.\n\nSources: [psa_complete_reference_0004, wiki_baseball_card_0024, psa_complete_reference_0008, psa_complete_reference_0000, psa_complete_reference_0007]",
+      "chunks_used": [
+        "psa_complete_reference_0004",
+        "wiki_baseball_card_0024",
+        "wiki_psa_0005",
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0000",
+        "wiki_rookie_card_0003",
+        "psa_complete_reference_0007"
+      ],
+      "routing_intent": "comparison",
+      "agent_used": "comparison_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer provides several accurate points grounded in the context, such as PSA's grading scale, its reputation, the existence of price guides for graded cards, and encapsulation options for altered cards. However, it contains a significant hallucination: the claim 'Their grading standards have 'become the official standard for the most valuable cards in the hobby' (Chunk 1)' is entirely unsupported by Chunk 1 or any other provided chunk. This crucial piece of information regarding value is fabricated and incorrectly cited. Additionally, minor unsupported details like '55/45 centering on front' for PSA 10 and a detailed definition of PSA 1 are not present in the chunks. The repeated use of the hallucinated phrase in the summary further detracts from its groundedness. Given the mix of grounded and significantly ungrounded claims directly related to the question's core, a score of 0.5 is appropriate.",
+      "relevance_score": 0.5,
+      "relevance_reason": "Two chunks directly address how grading establishes value through standardized authentication and price guides. Two chunks define specific grades, providing context but not directly comparing graded vs. raw value. Three chunks are largely irrelevant, discussing grading alterations or being pure references."
+    },
+    {
+      "id": "eval_027",
+      "question": "What is the difference between a first print and a reprint card?",
+      "category": "comparison",
+      "expected_grounded": true,
+      "answer": "The provided context chunks do not contain a direct definition or comparison between \"first print\" and \"reprint card.\"\n\nHowever, the context extensively defines a \"rookie card\" as the first trading card to feature an athlete after they have participated in the highest level of competition within their sport (Chunk 3). Collectors often value these first appearances more than subsequent issues. The concept of a \"rookie card\" is debated, as some believe it's the first appearance on *any* card, while others consider it the first licensed issue from a major manufacturer that is widely distributed (Chunk 4). For example, the 1952 Topps Mickey Mantle is a famous and record-selling rookie card ($12.6 million for an SGC Mint+ 9.5 in August 2022), but the 1951 Bowman card was his actual rookie year card (Chunk 4). This highlights a distinction between a player's *first* card and a card that may be more widely recognized or valued as *a* rookie card, but it does not define \"first print\" versus \"reprint\" of a specific card issue.\n\nSources: [wiki_rookie_card_0000, wiki_rookie_card_0001]",
+      "chunks_used": [
+        "wiki_baseball_card_0015",
+        "wiki_topps_0020",
+        "wiki_rookie_card_0000",
+        "wiki_rookie_card_0001",
+        "psa_complete_reference_0003",
+        "wiki_baseball_card_0010",
+        "wiki_upper_deck_0011",
+        "psa_complete_reference_0008"
+      ],
+      "routing_intent": "comparison",
+      "agent_used": "comparison_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer correctly states that the context does not define 'first print' or 'reprint card.' It then provides an accurate definition of a 'rookie card' and the debate surrounding it, citing chunks [wiki_rookie_card_0000] and [wiki_rookie_card_0001] correctly for these points. However, the answer includes a significant hallucination: the entire example about the '1952 Topps Mickey Mantle' and '1951 Bowman card' with specific sales figures ($12.6 million). This information is not present in any of the provided context chunks. Additionally, the claim that 'Collectors often value these first appearances more than subsequent issues' is not explicitly supported by the chunks, though it's a common understanding in the hobby. The major hallucination about Mickey Mantle detracts significantly from the groundedness, despite the initial correct assessment and some accurate extractions.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks explain the difference between a 'first print' and a 'reprint' card. Most chunks discuss general baseball card history, grading, or the definition of a 'rookie card' (which refers to an athlete's first card, not necessarily the first printing run of a specific card as opposed to a later reprint). There is no information about multiple print runs, distinguishing features, or why collectors differentiate between first prints and reprints."
+    },
+    {
+      "id": "eval_028",
+      "question": "What is the current market price for a 2023 Shohei Ohtani rookie card?",
+      "category": "edge_case",
+      "expected_grounded": false,
+      "answer": "The provided context chunks do not contain information about the current market price for a 2023 Shohei Ohtani rookie card. While the chunks discuss the general value of rookie cards, famous record-selling cards like the T206 Honus Wagner and 1952 Topps Mickey Mantle, and mention MLB's 2023-2024 season rookie patches, there is no specific data on Shohei Ohtani's card prices.\n\nSources: [Chunk 1, Chunk 3, Chunk 5]",
+      "chunks_used": [
+        "wiki_rookie_card_0000",
+        "wiki_rookie_card_0003",
+        "wiki_baseball_card_0017",
+        "wiki_baseball_card_0029",
+        "wiki_rookie_card_0001"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.5,
+      "groundedness_reason": "The answer correctly states that the context does not contain the market price for the Shohei Ohtani card and accurately identifies some content in the chunks (general value, Honus Wagner, MLB Debut Patch Cards). However, it hallucinates by mentioning the '1952 Topps Mickey Mantle' card, which is not present in any of the provided context chunks. This specific, ungrounded detail reduces the score to partially grounded.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks provide any information regarding the current market price for a 2023 Shohei Ohtani rookie card. The chunks discuss the general definition of a rookie card, references for related topics, general baseball card collecting, and debates about what constitutes a rookie card. Shohei Ohtani is not mentioned in any chunk, nor is any specific market price data provided."
+    },
+    {
+      "id": "eval_029",
+      "question": "How do I submit a card to PSA for grading?",
+      "category": "edge_case",
+      "expected_grounded": true,
+      "answer": "The provided context chunks mention specific aspects related to submitting a card to PSA for grading, but do not outline the full step-by-step process.\n\nSpecifically, the chunks indicate that a \"submission form\" is used to list desired minimum grades, such as \"Authentic Altered\" (AA) or \"Authentic\" (Auth) designations, which can be entered if the \"Minimum Grade (MG) option\" is available on select service levels. If available, this field will appear when filling out the submission form via the \"Online Submission Center.\" Additionally, a \"Research Request\" can be submitted in advance through the \"Customer Request Center (CRC)\" to inquire about a specific item.\n\nHowever, the chunks do not provide information on how to initiate a submission, package a card, or details beyond the submission form specifics.\n\nSources: [psa_complete_reference_0004]",
+      "chunks_used": [
+        "psa_complete_reference_0004",
+        "wiki_psa_0000",
+        "psa_complete_reference_0000",
+        "wiki_psa_0001",
+        "psa_complete_reference_0008"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 0.25,
+      "groundedness_reason": "While the answer correctly identifies that the context does not provide a full step-by-step process for submission, it introduces significant ungrounded claims. Only a very small portion (submission form, desired minimum grades like 'Authentic Altered') is supported by [psa_complete_reference_0004]. The answer hallucinates specific details such as 'Authentic (Auth) designations', 'Minimum Grade (MG) option', 'select service levels', 'Online Submission Center', 'Research Request', and 'Customer Request Center (CRC)'. These facts are not present in any of the provided chunks, making the answer mostly ungrounded with significant hallucination.",
+      "relevance_score": 0.0,
+      "relevance_reason": "None of the retrieved chunks provide information on the process or steps required to submit a card to PSA for grading. They discuss grading standards, PSA's history, and general information about the company, but not the submission procedure."
+    },
+    {
+      "id": "eval_030",
+      "question": "What is the PSA grading scale for autographed cards?",
+      "category": "edge_case",
+      "expected_grounded": true,
+      "answer": "The provided context chunks do not contain information about a specific PSA grading scale for autographed cards. The descriptions detail the PSA numeric grading scale from 1 to 10 based on the condition of the card itself, covering attributes like corners, edges, surface, gloss, centering, and the presence of flaws such as creases or stains.\n\nSources: [chunk_1, chunk_2, chunk_3, chunk_4, chunk_5]",
+      "chunks_used": [
+        "psa_complete_reference_0000",
+        "psa_complete_reference_0008",
+        "psa_complete_reference_0007",
+        "psa_complete_reference_0004",
+        "wiki_psa_0001"
+      ],
+      "routing_intent": "single",
+      "agent_used": "retrieval_agent",
+      "groundedness_score": 1.0,
+      "groundedness_reason": "The answer accurately states that the context chunks do not contain information about a specific PSA grading scale for autographed cards. It then correctly summarizes the information that *is* present in the chunks regarding the general PSA numeric grading scale and the attributes it evaluates for the card's condition. All claims are directly supported by the provided chunks, and no external information is introduced. The sources cited are appropriate as none of the chunks contain the specific information requested, and the descriptive parts are drawn from the relevant chunks.",
+      "relevance_score": 0.25,
+      "relevance_reason": "The chunks describe the general PSA grading scale for cards, including definitions for various grades (PSA 10, 9, 5, 4). However, the question specifically asks about the grading scale for 'autographed cards', and none of the provided chunks address any specific criteria or considerations unique to autographs (e.g., autograph quality, placement, fading). The chunks about PSA history and altered cards are irrelevant. While the numerical scale itself might be similar, the lack of specificity regarding autographed cards makes these chunks largely insufficient for a comprehensive answer."
+    }
+  ]
+}
