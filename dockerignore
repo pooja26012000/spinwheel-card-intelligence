@@ -1,0 +1,13 @@
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+pipeline/embeddings_cache.jsonl
+pipeline/embeddings_upload.jsonl
+frontend/
+.github/
+eval/results_*.json
