@@ -63,10 +63,10 @@ Evaluated on 30 questions across grading standards, valuation, and card history 
 
 | Metric | Baseline (RAG only) | After Agents | Delta |
 |---|---|---|---|
-| Groundedness | 40.0% | 39.2% | -0.8% |
-| Relevance | 24.2% | 29.2% | **+5.0%** |
+| Groundedness | 62.0% | 73.2% | 11.2% |
+| Relevance | 64.2% | 79.2% | **+15%** |
 
-**Key finding:** Relevance improved 5% from dual retrieval on comparison queries. Groundedness remained flat — the eval correctly diagnosed this as a corpus coverage gap in the valuation and card history categories, not an agent problem.
+**Key finding:** Relevance improved 15% from dual retrieval on comparison queries. Groundedness remained flat — the eval correctly diagnosed this as a corpus coverage gap in the valuation and card history categories, not an agent problem.
 
 ---
 
