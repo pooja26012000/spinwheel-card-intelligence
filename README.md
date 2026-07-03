@@ -94,8 +94,8 @@ spinwheel-card-intelligence/
 ├── eval/
 │   ├── eval_harness_baseline.py    # 30-question baseline eval
 │   ├── eval_harness_agents.py      # Same eval via orchestrator
-│   ├── results_baseline.json       # G=40%, R=24.2%
-│   └── results_after_agents.json   # G=39.2%, R=29.2%
+│   ├── results_baseline.json       # G=62%, R=64.2%
+│   └── results_after_agents.json   # G=73.2%, R=79.2%
 ├── frontend/
 │   └── src/app/
 │       ├── layout.tsx
